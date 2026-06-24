@@ -15,8 +15,8 @@ app.secret_key = 'your_super_secret_key'
 # --- EMAIL CONFIGURATION ---
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'your_email@gmail.com'  
-app.config['MAIL_PASSWORD'] = 'your_app_password'   
+app.config['MAIL_USERNAME'] = 'npritam312@gmail.com'  
+app.config['MAIL_PASSWORD'] = 'wnna myws syee doca'   
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 
@@ -150,7 +150,7 @@ def report_issue():
 
 # --- ADMIN ---
 @app.route('/admin', methods=['GET', 'POST'])
-def admin():
+def admin_login():
     if request.method == 'POST':
         if request.form.get('password') == 'admin123':
             session['admin'] = True
