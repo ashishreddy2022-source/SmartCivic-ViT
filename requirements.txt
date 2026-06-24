@@ -1,6 +1,0 @@
-flask
-gunicorn
-opencv-python-headless
-numpy
-ultralytics
-scikit-learn
